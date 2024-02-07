@@ -3,7 +3,7 @@
 client_id = "cb8bc22ac5d662f3278296e43e69e8fd"
 name = "shopping-assistant"
 handle = "shopping-assistant-7"
-application_url = "https://variance-mention-kodak-scene.trycloudflare.com"
+application_url = "https://app-votes-province-highlighted.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://variance-mention-kodak-scene.trycloudflare.com/auth/callback",
-  "https://variance-mention-kodak-scene.trycloudflare.com/auth/shopify/callback",
-  "https://variance-mention-kodak-scene.trycloudflare.com/api/auth/callback"
+  "https://app-votes-province-highlighted.trycloudflare.com/auth/callback",
+  "https://app-votes-province-highlighted.trycloudflare.com/auth/shopify/callback",
+  "https://app-votes-province-highlighted.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
