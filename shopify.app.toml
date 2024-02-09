@@ -3,7 +3,7 @@
 client_id = "cb8bc22ac5d662f3278296e43e69e8fd"
 name = "shopping-assistant"
 handle = "shopping-assistant-7"
-application_url = "https://quantum-and-daughter-local.trycloudflare.com"
+application_url = "https://identifies-cable-consortium-hall.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://quantum-and-daughter-local.trycloudflare.com/auth/callback",
-  "https://quantum-and-daughter-local.trycloudflare.com/auth/shopify/callback",
-  "https://quantum-and-daughter-local.trycloudflare.com/api/auth/callback"
+  "https://identifies-cable-consortium-hall.trycloudflare.com/auth/callback",
+  "https://identifies-cable-consortium-hall.trycloudflare.com/auth/shopify/callback",
+  "https://identifies-cable-consortium-hall.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

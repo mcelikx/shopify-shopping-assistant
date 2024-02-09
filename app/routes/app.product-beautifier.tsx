@@ -104,8 +104,6 @@ export default function ProductBeautifier() {
         }
       }`);
 
-    console.log(response);
-
     const {
       data: {
         products: { nodes },
@@ -150,6 +148,7 @@ export default function ProductBeautifier() {
               />
               <Text>{formState.productTitle}</Text>
               <Text>{formState.productDescription}</Text>
+              <Text>{formState.productHandle}</Text>
               {/* get information from user how to beautify the product description */}
               <Divider />
               <TextField
@@ -159,8 +158,6 @@ export default function ProductBeautifier() {
                   setFormState({ ...formState, productTitle: value })
                 }
               />
-
-              <Button onClick={() => beautifyProduct()}>Beautify</Button>
             </BlockStack>
           </Card>
         </Layout.Section>
