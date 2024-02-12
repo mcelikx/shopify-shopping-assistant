@@ -61,59 +61,7 @@ export default function ProductBeautifier() {
     }
   }
 
-  async function loader({ request }) {
-    const { admin } = await authenticate.admin(request);
-
-    const response = await admin.graphql(`
-      {
-        products(first: 25) {
-          nodes {
-            title
-            description
-          }
-        }
-      }`);
-
-    const {
-      data: {
-        products: { nodes },
-      },
-    } = await response.json();
-
-    return json(nodes);
-  }
-
-  async function beautifyProduct(request) {
-    console.log(formState.productId);
-    // mutation {
-    //   productUpdate(input: {id: "gid://shopify/Product/108828309", title: "Sweet new product - GraphQL Edition"}) {
-    //     product {
-    //       id
-    //     }
-    //   }
-    // }
-
-    const { admin } = await authenticate.admin(request);
-
-    const response = await admin.graphql(`
-      mutation {
-        productUpdate(input: {id: "${formState.productId}", title: "${formState.productTitle}"}) {
-          product {
-            id
-          }
-        }
-      }`);
-
-    const {
-      data: {
-        products: { nodes },
-      },
-    } = await response.json();
-
-    console.log(nodes);
-
-    return json(nodes);
-  }
+  const submit = useSubmit();
 
   return (
     <Page>
@@ -147,8 +95,8 @@ export default function ProductBeautifier() {
                 size="large"
               />
               <Text>{formState.productTitle}</Text>
-              <Text>{formState.productDescription}</Text>
               <Text>{formState.productHandle}</Text>
+
               {/* get information from user how to beautify the product description */}
               <Divider />
               <TextField

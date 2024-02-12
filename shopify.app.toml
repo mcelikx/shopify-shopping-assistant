@@ -3,7 +3,7 @@
 client_id = "cb8bc22ac5d662f3278296e43e69e8fd"
 name = "shopping-assistant"
 handle = "shopping-assistant-7"
-application_url = "https://identifies-cable-consortium-hall.trycloudflare.com"
+application_url = "https://runs-mozilla-serial-vote.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://identifies-cable-consortium-hall.trycloudflare.com/auth/callback",
-  "https://identifies-cable-consortium-hall.trycloudflare.com/auth/shopify/callback",
-  "https://identifies-cable-consortium-hall.trycloudflare.com/api/auth/callback"
+  "https://runs-mozilla-serial-vote.trycloudflare.com/auth/callback",
+  "https://runs-mozilla-serial-vote.trycloudflare.com/auth/shopify/callback",
+  "https://runs-mozilla-serial-vote.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
