@@ -30,6 +30,18 @@ import {
 } from "@shopify/polaris";
 
 export default function PreDefinedLinks() {
+  //   shopify.loading(false);
+
+  async function selectCollections() {
+    const collections = await window.shopify.resourcePicker({
+      type: "collection",
+      action: "select", // customized action verb, either 'select' or 'add',
+    });
+
+    if (collections) {
+      console.log(collections);
+    }
+  }
   return (
     <Page>
       <Layout>
@@ -40,6 +52,9 @@ export default function PreDefinedLinks() {
                 This is a page that demonstrates the use of pre-defined links.
               </Text>
             </BlockStack>
+          </Card>
+          <Card title="Define Collections">
+            <Button onClick={selectCollections}>Select Collection</Button>
           </Card>
         </Layout.Section>
       </Layout>

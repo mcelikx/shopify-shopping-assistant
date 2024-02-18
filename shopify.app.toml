@@ -3,7 +3,7 @@
 client_id = "cb8bc22ac5d662f3278296e43e69e8fd"
 name = "shopping-assistant"
 handle = "shopping-assistant-7"
-application_url = "https://arctic-appearance-everybody-enemies.trycloudflare.com"
+application_url = "https://fifty-newsletters-conditioning-hygiene.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://arctic-appearance-everybody-enemies.trycloudflare.com/auth/callback",
-  "https://arctic-appearance-everybody-enemies.trycloudflare.com/auth/shopify/callback",
-  "https://arctic-appearance-everybody-enemies.trycloudflare.com/api/auth/callback"
+  "https://fifty-newsletters-conditioning-hygiene.trycloudflare.com/auth/callback",
+  "https://fifty-newsletters-conditioning-hygiene.trycloudflare.com/auth/shopify/callback",
+  "https://fifty-newsletters-conditioning-hygiene.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
